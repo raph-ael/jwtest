@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Restaurant-Datenbank</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -18,6 +18,11 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+            }
+
+            input, textarea {
+                font-size: 12px;
+                font-family: 'Nunito', sans-serif;
             }
 
             .full-height {
@@ -38,10 +43,6 @@
                 position: absolute;
                 right: 10px;
                 top: 18px;
-            }
-
-            .content {
-                text-align: center;
             }
 
             .title {
@@ -81,18 +82,49 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Super Tolle Restaurants
                 </div>
 
-                <div class="links">
-                    <a href="https://laravel.com/docs">Docs</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://blog.laravel.com">Blog</a>
-                    <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                <div>
+                    <h3>Restaurants</h3>
+                    <fieldset>
+                    <form>
+                        <h5>Neues Restaurant</h5>
+                        <input type="text" name="name" placeholder="Name" /><br>
+                        <textarea name="description" placeholder="Beschreibung"></textarea><br>
+                        <button type="submit">Speichern</button>
+                    </form>
+                    </fieldset>
+                    <table>
+                        <thead>
+                            <th>Name</th>
+                            <th>Beschreibung</th>
+                            <th>Bewertung</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Test</td>
+                                <td>Tolles Restaurant</td>
+                                <td>
+                                    <select name="stars">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                    </select> Sterne
+                                    <input type="text" name="comment" placeholder="Kommentar"> <button type="submit">Bewerten</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
+
             </div>
         </div>
     </body>
