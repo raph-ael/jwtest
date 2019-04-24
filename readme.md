@@ -6,16 +6,19 @@ clone das Repository (https://github.com/raph-ael/jwtest)
 
 ## 2. Datenbankverbindung
 
-Setze den Datenbank-Verbindungstype auf sqlite, die sqlite Datenbank soll unter /tmp/database.sqlite gespeichert werden
+Setze den Datenbank-Verbindungstyp auf sqlite, die sqlite Datenbank soll unter /tmp/database.sqlite gespeichert werden
 
 ## 3. Datenbank Migrationen
 
 Wir wollen eine Restaurant Datenbank erstellen. Schreibe eine Datanbank Migration für eine neue Tabelle `restaurants` 
-Wir möchten folgende Felder Speichern: **Name, Beschreibung, Foto**
+Wir möchten folgende Felder Speichern: **Name, Stadt, Beschreibung**
 
-Wir benötigen eine weitere Datenbank-Tabelle für die Rastaurant Bewertungen.
-Eine Bewertung Soll die Felder: **Kommentar, stars** speichern, wobei stars eine Zahl von 1-10 sein darf.
+## 4. Restaurant anlegen
 
-Eine Bewertung soll natürlich mit einem Restaurant verknüpft sein.
+Der User soll mit einem Klick auf `Neues Restaurant` ein neues Restaurant anlegen können ohne das die Seite bei diesem Vorgang neu geladen wird.
 
-## 4. 
+## 5. Listing
+
+Auf der Startseite soll eine Liste aller Restaurants zu sehen sein. Die nach dem anlegen eines Restaurants aktualisiert wird, natürlich auch ohne einen page reload ;)
+
+# Viel Spaß!! :)
