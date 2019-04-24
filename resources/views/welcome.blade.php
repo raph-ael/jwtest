@@ -34,7 +34,13 @@
                 <a class="nav-link" href="#">Home</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Neues Restaurant</a>
+                <a class="nav-link" href="{{route('allRestaurant')}} ">All Restaurants</a>
+            </li>
+
+
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('restaurants')}}">Neues Restaurant</a>
             </li>
         </ul>
     </div>
@@ -43,9 +49,28 @@
 <main role="main" class="container">
     <div class="template">
 
+        <table class="table table-border">
+            <tr>
+                <td>id</td>
+                <td>Name</td>
+                <td>Stadt</td>
+                <td>Beschreibung</td>
+
+            </tr>
+            @foreach($restaurants as $row)
+            <tr>
+                <td>{{$row->id}}</td>
+                <td>{{$row->Name}}</td>
+                <td>{{$row->Stadt}}</td>
+                <td>{{$row->Beschreibung}}</td>
+            </tr>
+@endforeach
+        </table>
 
 
-        <!-- CONTENT -->
+
+        </table>
+
 
 
 

@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','restaurantController@allRestaurant' );
+
+Route::get('allRestaurant', 'restaurantController@allRestaurant')->name('allRestaurant');
+Route::get('restaurants', 'restaurantController@newRestaurant')->name('restaurants');
+Route::post('/restaurant-added', 'restaurantController@restaurantAdded');
